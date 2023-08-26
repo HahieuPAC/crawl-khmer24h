@@ -39,5 +39,12 @@ namespace CrawlDataWebsiteToolBasic.Helpers
 
             return parts[2];
         }
+
+        public static string ProcessTel(string tel)
+        {
+            string[] parts = tel.Split(':');
+
+            return parts[1];
+        }
     }
 }

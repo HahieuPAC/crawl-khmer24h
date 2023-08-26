@@ -114,10 +114,34 @@ internal class Program
                         Console.WriteLine("Check product Price: {0}", productPrice);
 
                         //Get product detail
-                        var productdetail = product
-                            .QuerySelectorAll(".item-detail > .list-unstyled > li > div > span")
+                        var productDetails = product
+                            .QuerySelectorAll(".item-detail > .list-unstyled > li > div > .value")
                             .ToList();
-                        Console.WriteLine("check product detail: {0}", productdetail[1].InnerText);
+                        Console.WriteLine("check product detail: {0}", productDetails[1].InnerText);
+
+
+                        //Get product detail ID
+                        var productDetailId = product
+                            .QuerySelectorAll(".item-header > .item-short-description > .list-unstyled > li > .value")
+                            .ToList();
+                        Console.WriteLine("check product detail: {0}", productDetailId[1].InnerText);
+
+
+                        //Get product phone number
+                        var productPhoneNumber = product
+                            .QuerySelectorAll(".list_numbers > .list-unstyled > .number > a")
+                            .Select(a => a.Attributes["href"].Value)
+                            .ToList();
+
+                        var phoneNumber = new List<string>();
+
+                        foreach (var tel in productPhoneNumber) 
+                        {
+                            var getPhoneNumber = StringHelper.ProcessTel(tel);
+                            phoneNumber.Add(getPhoneNumber);
+                        } 
+                            
+                        Console.WriteLine("check product phone number: {0}", phoneNumber[1]);
 
                     }
 
