@@ -114,10 +114,10 @@ internal class Program
                         Console.WriteLine("Check product Price: {0}", productPrice);
 
                         //Get product detail
-                        //var productDetail = product
-                        //    .QuerySelectorAll(".item-detail.p-3 > .list-unstyled.item-fields > li > span")
-                        //    .ToList();
-                        //Console.WriteLine("Check product detail: {0}", productDetail.Count);
+                        var productdetail = product
+                            .QuerySelectorAll(".item-detail > .list-unstyled > li > div > span")
+                            .ToList();
+                        Console.WriteLine("check product detail: {0}", productdetail[1].InnerText);
 
                     }
 
