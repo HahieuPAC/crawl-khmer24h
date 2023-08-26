@@ -13,7 +13,7 @@ namespace CrawlDataWebsiteTool.Models
         [Description("Car Makes")] public string CarMakes { get; set; }
         [Description("Tax Type")] public string TaxType { get; set; }
         [Description("Color")] public string Color { get; set; }
-        [Description("Car Mode")] public string CarMode { get; set; }
+        [Description("Car Mode")] public string CarModel { get; set; }
         [Description("Condition")] public string Condition { get; set; }
         [Description("Year")] public string Year { get; set; }
         [Description("Transmission")] public string Transmission { get; set; }

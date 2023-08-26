@@ -121,10 +121,10 @@ internal class Program
                         string carMakes = productDetails[0].InnerText;
                         string carModel = productDetails[1].InnerText;
                         string year = productDetails[2].InnerText;
-                        string TaxType = productDetails[3].InnerText;
+                        string taxType = productDetails[3].InnerText;
                         string condition = productDetails[4].InnerText;
-                        string Transmission = productDetails[5].InnerText;
-                        string Color = productDetails[6].InnerText;
+                        string transmission = productDetails[5].InnerText;
+                        string color = productDetails[6].InnerText;
 
 
 
@@ -134,8 +134,8 @@ internal class Program
                             .ToList();
                         string id = productDetailId[0].InnerText;
                         string category = productDetailId[1].InnerText;
-                        string Locations = productDetailId[2].InnerText;
-                        string Posted = productDetailId[3].InnerText;
+                        string locations = productDetailId[2].InnerText;
+                        string posted = productDetailId[3].InnerText;
 
 
                         //Get product phone number
@@ -156,17 +156,43 @@ internal class Program
 
                         listDataExport.Add(new ProductModel()
                         {
-                            //productname = productname,
-                            //gender = gender.equals("nam") ? "nam" : "nữ",
-                            //currency = "vnd",
-                            //discountprice = discountprice,
-                            //orginprice = orginprice,
-                            //linkdetail = linkdetail,
-                            //author = "https://www.code-mega.com"
+                            ID = id,
+                            Category = category,
+                            Locations = locations,
+                            Posted = posted,
+                            ProductName = productName,
+                            Price = productPrice,
+                            CarMakes = carMakes,
+                            TaxType = taxType,
+                            Color = color,
+                            CarModel = carModel,
+                            Condition = condition,
+                            Year = year,
+                            Transmission = transmission,
+                            PhoneNumber0 = phoneNumber[0],
+                            PhoneNumber1 = phoneNumber[1],
+                            PhoneNumber2 = phoneNumber[2],
                         });
+                        Console.WriteLine(">>> Check listDataExport.ID: {0}", listDataExport[0].ID);
+                        Console.WriteLine(">>> Check listDataExport.Category: {0}", listDataExport[0].Category);
+                        Console.WriteLine(">>> Check listDataExport.Locations: {0}", listDataExport[0].Locations);
+                        Console.WriteLine(">>> Check listDataExport.Posted: {0}", listDataExport[0].Posted);
+                        Console.WriteLine(">>> Check listDataExport.ProductName: {0}", listDataExport[0].ProductName);
+                        Console.WriteLine(">>> Check listDataExport.Price: {0}", listDataExport[0].Price);
+                        Console.WriteLine(">>> Check listDataExport.CarMakes: {0}", listDataExport[0].CarMakes);
+                        Console.WriteLine(">>> Check listDataExport.TaxType: {0}", listDataExport[0].TaxType);
+                        Console.WriteLine(">>> Check listDataExport.Color: {0}", listDataExport[0].Color);
+                        Console.WriteLine(">>> Check listDataExport.CarModel: {0}", listDataExport[0].CarModel);
+                        Console.WriteLine(">>> Check listDataExport.Condition: {0}", listDataExport[0].Condition);
+                        Console.WriteLine(">>> Check listDataExport.Year: {0}", listDataExport[0].Year);
+                        Console.WriteLine(">>> Check listDataExport.Transmission: {0}", listDataExport[0].Transmission);
+                        Console.WriteLine(">>> Check listDataExport.PhoneNumber0 {0}", listDataExport[0].PhoneNumber0);
+                        Console.WriteLine(">>> Check listDataExport.PhoneNumber1: {0}", listDataExport[0].PhoneNumber1);
+                        Console.WriteLine(">>> Check listDataExport.PhoneNumber2: {0}", listDataExport[0].PhoneNumber2);
 
+                        //Print Spinner
+                        spinner.Turn(displayMsg: $"Crawling {listDataExport.Count} Item(s) | ", sequenceCode: 5);
                     }
-
                 }
             }    
         }
