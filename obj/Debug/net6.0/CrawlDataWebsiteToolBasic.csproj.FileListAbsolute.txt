@@ -1,0 +1,164 @@
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\CrawlDataWebsiteToolBasic.exe
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\CrawlDataWebsiteToolBasic.deps.json
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\CrawlDataWebsiteToolBasic.runtimeconfig.json
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\CrawlDataWebsiteToolBasic.dll
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\CrawlDataWebsiteToolBasic.pdb
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\EPPlus.dll
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\EPPlus.Interfaces.dll
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\EPPlus.System.Drawing.dll
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Fizzler.dll
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Fizzler.Systems.HtmlAgilityPack.dll
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\HtmlAgilityPack.dll
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Json.dll
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Physical.dll
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.IO.RecyclableMemoryStream.dll
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Security.Cryptography.Pkcs.dll
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.csproj.AssemblyReference.cache
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.GeneratedMSBuildEditorConfig.editorconfig
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.AssemblyInfoInputs.cache
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.AssemblyInfo.cs
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.csproj.CoreCompileInputs.cache
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.csproj.CopyComplete
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.dll
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\refint\CrawlDataWebsiteToolBasic.dll
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.pdb
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.genruntimeconfig.cache
+D:\HuyNX11\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\ref\CrawlDataWebsiteToolBasic.dll
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\CrawlDataWebsiteToolBasic.exe
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\CrawlDataWebsiteToolBasic.deps.json
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\CrawlDataWebsiteToolBasic.runtimeconfig.json
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\CrawlDataWebsiteToolBasic.dll
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\CrawlDataWebsiteToolBasic.pdb
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\EPPlus.dll
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\EPPlus.Interfaces.dll
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\EPPlus.System.Drawing.dll
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Fizzler.dll
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Fizzler.Systems.HtmlAgilityPack.dll
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\HtmlAgilityPack.dll
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Json.dll
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.IO.RecyclableMemoryStream.dll
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Security.Cryptography.Pkcs.dll
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.csproj.AssemblyReference.cache
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.GeneratedMSBuildEditorConfig.editorconfig
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.AssemblyInfoInputs.cache
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.AssemblyInfo.cs
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.csproj.CoreCompileInputs.cache
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.csproj.CopyComplete
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.dll
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\refint\CrawlDataWebsiteToolBasic.dll
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.pdb
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.genruntimeconfig.cache
+C:\HuyNX11\Data\Code Mega Blog\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\ref\CrawlDataWebsiteToolBasic.dll
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\CrawlDataWebsiteToolBasic.exe
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\CrawlDataWebsiteToolBasic.deps.json
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\CrawlDataWebsiteToolBasic.runtimeconfig.json
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\CrawlDataWebsiteToolBasic.dll
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\CrawlDataWebsiteToolBasic.pdb
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\EPPlus.dll
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\EPPlus.Interfaces.dll
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\EPPlus.System.Drawing.dll
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Fizzler.dll
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Fizzler.Systems.HtmlAgilityPack.dll
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\HtmlAgilityPack.dll
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Json.dll
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.IO.RecyclableMemoryStream.dll
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Security.Cryptography.Pkcs.dll
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.csproj.AssemblyReference.cache
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.GeneratedMSBuildEditorConfig.editorconfig
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.AssemblyInfoInputs.cache
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.AssemblyInfo.cs
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.csproj.CoreCompileInputs.cache
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.csproj.CopyComplete
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.dll
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\refint\CrawlDataWebsiteToolBasic.dll
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.pdb
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.genruntimeconfig.cache
+C:\HuyNX11\Data\Code Mega Blog\Crawl Data\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\ref\CrawlDataWebsiteToolBasic.dll
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\CrawlDataWebsiteToolBasic.exe
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\CrawlDataWebsiteToolBasic.deps.json
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\CrawlDataWebsiteToolBasic.runtimeconfig.json
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\CrawlDataWebsiteToolBasic.dll
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\CrawlDataWebsiteToolBasic.pdb
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\EPPlus.dll
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\EPPlus.Interfaces.dll
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\EPPlus.System.Drawing.dll
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Fizzler.dll
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Fizzler.Systems.HtmlAgilityPack.dll
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\HtmlAgilityPack.dll
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.csproj.AssemblyReference.cache
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.AssemblyInfoInputs.cache
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.AssemblyInfo.cs
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.csproj.CopyComplete
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.dll
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\refint\CrawlDataWebsiteToolBasic.dll
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.pdb
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.genruntimeconfig.cache
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\ref\CrawlDataWebsiteToolBasic.dll
