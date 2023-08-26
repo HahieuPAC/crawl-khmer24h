@@ -2,6 +2,7 @@
 using CrawlDataWebsiteToolBasic.Functions;
 using CrawlDataWebsiteToolBasic.Helpers;
 using Fizzler.Systems.HtmlAgilityPack;
+using CrawlDataWebsiteToolBasic.ExportTool;
 using HtmlAgilityPack;
 using System.Linq;
 using System.Reflection;
@@ -26,6 +27,22 @@ using static System.Net.WebRequestMethods;
 
 internal class Program
 {
+    public static string GetInnerTextSafely(List<HtmlNode> nodeList, int index)
+    {
+        if (index >= 0 && index < nodeList.Count)
+        {
+            return nodeList[index].InnerText.RemoveBreakLineTab();
+        }
+        return "";
+    }
+    public static string GetPhoneNumberSafely(List<string> phoneNumbers, int index)
+    {
+        if (index >= 0 && index < phoneNumbers.Count)
+        {
+            return phoneNumbers[index];
+        }
+        return "";
+    }
     private static void Main(string[] args)
     {
         string currentPath = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) ?? "";
@@ -48,9 +65,6 @@ internal class Program
         // List lưu danh sách các sản phẩm Crawl được
         var listDataExport = new List<ProductModel>();
 
-        // Spinner
-        var spinner = new ConsoleSpinner();
-
         Console.WriteLine("Please do not turn off the app while crawling!");
 
         // Loop for 2 gender 
@@ -72,13 +86,13 @@ internal class Program
 
             int totalProductsResult;
             string textTotalProductsResult = StringHelper.ProcessUrl(checkElements);
-            Console.WriteLine(">>>check totalProductsResult: {0}", textTotalProductsResult);
+            //Console.WriteLine(">>>check totalProductsResult: {0}", textTotalProductsResult);
             int.TryParse(textTotalProductsResult, out totalProductsResult);
 
-            for (int i = 0; i <= totalProductsResult; i += 50)
+            for (int i = 0; i <= 50 /*totalProductsResult*/; i += 50)
             {
                 string typeUrl = $"https://www.khmer24.com/en/cars/all-cars.html?ad_condition={type}&per_page={i}";
-                Console.WriteLine(">>>check typeUrl: {0}", typeUrl);
+                //Console.WriteLine(">>>check typeUrl: {0}", typeUrl);
                 var documentForGetLinkProducts = web.Load(typeUrl);
                 var getLinkProdcuts = documentForGetLinkProducts
                     .DocumentNode
@@ -89,7 +103,7 @@ internal class Program
                 foreach (var linkProduct in getLinkProdcuts)
                 {
                     string linkOneProduct = linkProduct.ToString();
-                    Console.WriteLine(">>> Check linkProduct: {0}", linkOneProduct);
+                    //Console.WriteLine(">>> Check linkProduct: {0}", linkOneProduct);
                     var documentForGetProducts = web.Load(linkOneProduct);
                     var listNodeProductItem = documentForGetProducts
                         .DocumentNode
@@ -101,30 +115,28 @@ internal class Program
                     foreach (var product in listNodeProductItem) 
                     {
                         //Get product name
-                        var productName = product
-                            .QuerySelector("h1")
-                            .InnerText
-                            .RemoveBreakLineTab();
-                        Console.WriteLine("Check product Name: {0}", productName);
+                        var productNameNode = product.QuerySelector("h1");
+                        var productName = productNameNode != null ? productNameNode.InnerText.RemoveBreakLineTab() : "";
+                        //Console.WriteLine("Check product Name: {0}", productName);
 
                         //Get product price
-                        var productPrice = product
-                            .QuerySelector("b.price")
-                            .InnerText
-                            .RemoveBreakLineTab();
-                        Console.WriteLine("Check product Price: {0}", productPrice);
+                        var productPriceNode = product.QuerySelector("b.price");
+                        var productPrice = productPriceNode != null ? productPriceNode.InnerText.RemoveBreakLineTab() : "";
+                        //Console.WriteLine("Check product Price: {0}", productPrice);
+
 
                         //Get product detail
                         var productDetails = product
-                            .QuerySelectorAll(".item-detail > .list-unstyled > li > div > .value")
-                            .ToList();
-                        string carMakes = productDetails[0].InnerText;
-                        string carModel = productDetails[1].InnerText;
-                        string year = productDetails[2].InnerText;
-                        string taxType = productDetails[3].InnerText;
-                        string condition = productDetails[4].InnerText;
-                        string transmission = productDetails[5].InnerText;
-                        string color = productDetails[6].InnerText;
+                        .QuerySelectorAll(".item-detail > .list-unstyled > li > div > .value")
+                        .ToList();
+
+                        string carMakes = GetInnerTextSafely(productDetails, 0);
+                        string carModel = GetInnerTextSafely(productDetails, 1);
+                        string year = GetInnerTextSafely(productDetails, 2);
+                        string taxType = GetInnerTextSafely(productDetails, 3);
+                        string condition = GetInnerTextSafely(productDetails, 4);
+                        string transmission = GetInnerTextSafely(productDetails, 5);
+                        string color = GetInnerTextSafely(productDetails, 6);
 
 
 
@@ -132,10 +144,10 @@ internal class Program
                         var productDetailId = product
                             .QuerySelectorAll(".item-header > .item-short-description > .list-unstyled > li > .value")
                             .ToList();
-                        string id = productDetailId[0].InnerText;
-                        string category = productDetailId[1].InnerText;
-                        string locations = productDetailId[2].InnerText;
-                        string posted = productDetailId[3].InnerText;
+                        string id = GetInnerTextSafely(productDetailId, 0);
+                        string category = GetInnerTextSafely(productDetailId, 1);
+                        string locations = GetInnerTextSafely(productDetailId, 2);
+                        string posted = GetInnerTextSafely(productDetailId, 3);
 
 
                         //Get product phone number
@@ -150,12 +162,15 @@ internal class Program
                         {
                             var getPhoneNumber = StringHelper.ProcessTel(tel);
                             phoneNumber.Add(getPhoneNumber);
-                        } 
+                        }
+                        //string phoneNumber0 = GetPhoneNumberSafely(phoneNumber, 0);
+                        //string phoneNumber1 = GetPhoneNumberSafely(phoneNumber, 1);
+                        //string phoneNumber2 = GetPhoneNumberSafely(phoneNumber, 2);
                             
-                        Console.WriteLine("check product phone number: {0}", phoneNumber[1]);
 
                         listDataExport.Add(new ProductModel()
                         {
+                            ProducOrder = (listDataExport.Count + 1).ToString(),
                             ID = id,
                             Category = category,
                             Locations = locations,
@@ -169,131 +184,37 @@ internal class Program
                             Condition = condition,
                             Year = year,
                             Transmission = transmission,
-                            PhoneNumber0 = phoneNumber[0],
-                            PhoneNumber1 = phoneNumber[1],
-                            PhoneNumber2 = phoneNumber[2],
+                            //PhoneNumber0 = GetPhoneNumberSafely(phoneNumber, 0),
+                            //PhoneNumber1 = GetPhoneNumberSafely(phoneNumber, 1),
+                            //PhoneNumber2 = GetPhoneNumberSafely(phoneNumber, 2),
                         });
-                        Console.WriteLine(">>> Check listDataExport.ID: {0}", listDataExport[0].ID);
-                        Console.WriteLine(">>> Check listDataExport.Category: {0}", listDataExport[0].Category);
-                        Console.WriteLine(">>> Check listDataExport.Locations: {0}", listDataExport[0].Locations);
-                        Console.WriteLine(">>> Check listDataExport.Posted: {0}", listDataExport[0].Posted);
-                        Console.WriteLine(">>> Check listDataExport.ProductName: {0}", listDataExport[0].ProductName);
-                        Console.WriteLine(">>> Check listDataExport.Price: {0}", listDataExport[0].Price);
-                        Console.WriteLine(">>> Check listDataExport.CarMakes: {0}", listDataExport[0].CarMakes);
-                        Console.WriteLine(">>> Check listDataExport.TaxType: {0}", listDataExport[0].TaxType);
-                        Console.WriteLine(">>> Check listDataExport.Color: {0}", listDataExport[0].Color);
-                        Console.WriteLine(">>> Check listDataExport.CarModel: {0}", listDataExport[0].CarModel);
-                        Console.WriteLine(">>> Check listDataExport.Condition: {0}", listDataExport[0].Condition);
-                        Console.WriteLine(">>> Check listDataExport.Year: {0}", listDataExport[0].Year);
-                        Console.WriteLine(">>> Check listDataExport.Transmission: {0}", listDataExport[0].Transmission);
-                        Console.WriteLine(">>> Check listDataExport.PhoneNumber0 {0}", listDataExport[0].PhoneNumber0);
-                        Console.WriteLine(">>> Check listDataExport.PhoneNumber1: {0}", listDataExport[0].PhoneNumber1);
-                        Console.WriteLine(">>> Check listDataExport.PhoneNumber2: {0}", listDataExport[0].PhoneNumber2);
+                        //Console.WriteLine(">>> Check listDataExport.ID: {0}", listDataExport[0].ID);
+                        //Console.WriteLine(">>> Check listDataExport.Category: {0}", listDataExport[0].Category);
+                        //Console.WriteLine(">>> Check listDataExport.Locations: {0}", listDataExport[0].Locations);
+                        //Console.WriteLine(">>> Check listDataExport.Posted: {0}", listDataExport[0].Posted);
+                        //Console.WriteLine(">>> Check listDataExport.ProductName: {0}", listDataExport[0].ProductName);
+                        //Console.WriteLine(">>> Check listDataExport.Price: {0}", listDataExport[0].Price);
+                        //Console.WriteLine(">>> Check listDataExport.CarMakes: {0}", listDataExport[0].CarMakes);
+                        //Console.WriteLine(">>> Check listDataExport.TaxType: {0}", listDataExport[0].TaxType);
+                        //Console.WriteLine(">>> Check listDataExport.Color: {0}", listDataExport[0].Color);
+                        //Console.WriteLine(">>> Check listDataExport.CarModel: {0}", listDataExport[0].CarModel);
+                        //Console.WriteLine(">>> Check listDataExport.Condition: {0}", listDataExport[0].Condition);
+                        //Console.WriteLine(">>> Check listDataExport.Year: {0}", listDataExport[0].Year);
+                        //Console.WriteLine(">>> Check listDataExport.Transmission: {0}", listDataExport[0].Transmission);
+                        //Console.WriteLine(">>> Check listDataExport.PhoneNumber0 {0}", listDataExport[0].PhoneNumber0);
+                        //Console.WriteLine(">>> Check listDataExport.PhoneNumber1: {0}", listDataExport[0].PhoneNumber1);
+                        //Console.WriteLine(">>> Check listDataExport.PhoneNumber2: {0}", listDataExport[0].PhoneNumber2);
 
-                        //Print Spinner
-                        spinner.Turn(displayMsg: $"Crawling {listDataExport.Count} Item(s) | ", sequenceCode: 5);
                     }
                 }
             }    
         }
+        string csvFilePath = savePathExcel + DateTime.Now.Ticks+ "-car-khmer24h.CSV";
+        ExportCSV.ExportToCsv(listDataExport, csvFilePath);
+        var fileName = DateTime.Now.Ticks + "_Hayzzys-crawl.xlsx";
+        // Export data to Excel
+        ExportToExcel<ProductModel>.GenerateExcel(listDataExport, savePathExcel + fileName, "_hayzzys-crawl");
+
+        Console.WriteLine("DONE !!!");
     }
 }
-
-// Get total page from requestUrl
-// Lấy tổng số trang từ requestUrl
-//var texttotalpage = documentforgettotalpagemale
-//    .documentnode
-//    .queryselectorall(".page-numbers > li")
-//    .tolist()
-//    .where(s => !string.isnullorempty(s.innertext))
-//    .tolist()
-//    .last()
-//    .innertext
-//    .removebreaklinetab();
-
-//    int totalPage;
-//    int.TryParse(textTotalPage, out totalPage);
-
-//    // Loop each page
-//    // Lặp qua từng trang
-//    for (var i = 1; i <= totalPage; i++)
-//    {
-//        var requestPerPage = baseUrl + $"/kieu-dang/{gender}/page/{i}";
-
-//        // Load HTML to document from requestPerPage
-//        // Load trang web, nạp html vào document từ requestPerPage
-//        var documentForListItem = web.Load(requestPerPage);
-
-//        // Get all Node Product
-//        // Lấy tất cả các Node chứa thông tin của sản phẩm
-//        var listNodeProductItem = documentForListItem
-//            .DocumentNode
-//            .QuerySelectorAll("div.shop-container " +
-//                              "> div.products " +
-//                              "> div.product-small " +
-//                              "> div.col-inner " +
-//                              "> div.product-small " +
-//                              "> div.box-text")
-//            .ToList();
-
-//        // Loop for each Node
-//        // Lặp qua các Node
-//        foreach (var node in listNodeProductItem)
-//        {
-//            // Get Link Detail of Product
-//            // Lấy Link chi tiết của sản phẩm
-//            var linkDetail = node
-//                .QuerySelector("div.title-wrapper > p.name > a")
-//                .Attributes["href"]
-//                .Value
-//                .RemoveBreakLineTab();
-
-//            // Get Product Name
-//            // Lấy tên của sản phẩm
-//            var productName = node
-//                .QuerySelector("div.title-wrapper")
-//                .InnerText
-//                .RemoveBreakLineTab();
-
-//            // Get Product Price includes Orgin Price and Discount Price
-//            // Lấy giá của sản phẩm bao gồm giá gốc và giá khuyển mãi
-//            var priceText = node
-//                .QuerySelector("div.price-wrapper > span.price")
-//                .InnerText
-//                .RemoveBreakLineTab()
-//                .ReplaceMultiToEmpty(new List<string>() { "₫", ",", "&#8363;" });
-
-//            var priceList = priceText?.Split(" ").ToList();
-
-//            // Parse text to price and format
-//            var orginPrice = priceList?.Count > 0 ? double.Parse(priceList[0]).ToString("N2") : 0.ToString("N2");
-//            var discountPrice = priceList?.Count > 0 ? double.Parse(priceList[1]).ToString("N2") : 0.ToString("N2");
-
-//            // Add Product to listDataExport
-//            // Thêm sản phẩm vào listDataExport
-//            listDataExport.Add(new ProductModel()
-//            {
-//                ProductName = productName,
-//                Gender = gender.Equals("nam") ? "Nam" : "Nữ",
-//                Currency = "VND",
-//                DiscountPrice = discountPrice,
-//                OrginPrice = orginPrice,
-//                LinkDetail = linkDetail,
-//                Author = "https://www.code-mega.com"
-//            });
-
-//            // Print Spinner
-//            spinner.Turn(displayMsg: $"Crawling {listDataExport.Count} Item(s) | ", sequenceCode: 5);
-//        }
-//    }
-//}
-
-//var fileName = DateTime.Now.Ticks + "_code-mega.xlsx";
-
-//// Export data to Excel
-//ExportToExcel<ProductModel>.GenerateExcel(listDataExport, savePathExcel + fileName, "Code Mega");
-
-//Console.WriteLine($"Crawled {listDataExport.Count} Item(s)");
-//Console.WriteLine($"Link saved file excel: " + savePathExcel + fileName);
-//Console.WriteLine("DONE !!!");
-//Console.WriteLine("Code Mega");

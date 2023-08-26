@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "yx32VAGgRLInfUjKXZCHE5JYHYJzRTU19bAxhQFPGVY4h4VclAPkj9SPx8f/Ys4a0mhSgdb6046Jq/wb5dBAxQ==",
+  "dgSpecHash": "kKXjVRMUvCp8ntwIjdsEIPbq6MC5Og4xyb9gmTum08OLg4Xtk3K2PNUljh6o2mHJrmf9Ta0O6dZkDSG7qlcAtg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Administrator\\Documents\\Project\\CrawlDataWebsiteToolBasic\\CrawlDataWebsiteToolBasic.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\epplus\\6.0.8\\epplus.6.0.8.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\epplus.interfaces\\6.0.0\\epplus.interfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\epplus.system.drawing\\6.0.0\\epplus.system.drawing.6.0.0.nupkg.sha512",

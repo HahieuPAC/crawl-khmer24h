@@ -47,4 +47,5 @@ namespace CrawlDataWebsiteToolBasic.Helpers
             return parts[1];
         }
     }
+
 }
