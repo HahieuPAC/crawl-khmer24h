@@ -5,6 +5,8 @@ using Fizzler.Systems.HtmlAgilityPack;
 using HtmlAgilityPack;
 using System.Linq;
 using System.Text;
+using System.Xml.Linq;
+using static System.Net.WebRequestMethods;
 
 /// <summary>
 /// 
@@ -55,27 +57,83 @@ internal class Program
         foreach (var type in types)
         {
             var requestUrl = baseUrl + type;
-            Console.WriteLine(requestUrl);
 
             // Load HTML to document from requestUrl
             // Load trang web, nạp html vào document từ requestUrl
-            var documentForGetTotalPageMale = web.Load("https://www.khmer24.com/en/cars/all-cars.html?ad_condition=new");
+            var documentForGetTotalPage = web.Load(requestUrl);
 
-            var checkElements = documentForGetTotalPageMale
+            var checkElements = documentForGetTotalPage
                 .DocumentNode
                 .QuerySelectorAll(".page-item > a")
                 .Select(a => a.Attributes["href"].Value)
                 .ToList()
                 .Last();
 
-            Console.WriteLine(checkElements);
-            string totalProductsResult = StringHelper.ProcessUrl(checkElements);
-            Console.WriteLine(totalProductsResult);
+            int totalProductsResult;
+            string textTotalProductsResult = StringHelper.ProcessUrl(checkElements);
+            Console.WriteLine(">>>check totalProductsResult: {0}", textTotalProductsResult);
+            int.TryParse(textTotalProductsResult, out totalProductsResult);
 
-            for (int i = 0; i > totalProductsResult.Length; i += 50)
+            for (int i = 0; i <= totalProductsResult; i += 50)
             {
-                Console.WriteLine(i);
+                string typeUrl = $"https://www.khmer24.com/en/cars/all-cars.html?ad_condition={type}&per_page={i}";
+                Console.WriteLine(">>>check typeUrl: {0}", typeUrl);
+                var documentForGetLinkProducts = web.Load(typeUrl);
+                var getLinkProdcuts = documentForGetLinkProducts
+                    .DocumentNode
+                    .QuerySelectorAll(".item > a")
+                    .Select(a => a.Attributes["href"].Value)
+                    .ToList();
 
+                foreach (var linkProduct in getLinkProdcuts)
+                {
+                    string linkOneProduct = linkProduct.ToString();
+                    Console.WriteLine(">>> Check linkProduct: {0}", linkOneProduct);
+                    var documentForGetProducts = web.Load(linkOneProduct);
+                    var listNodeProductItem = documentForGetProducts
+                        .DocumentNode
+                        .QuerySelectorAll(".bg-white.border.rounded")
+                        .ToList()
+                        .Where(s => !string.IsNullOrEmpty(s.InnerText))
+                        .ToList();
+
+                    foreach (var product in listNodeProductItem) 
+                    {
+                        //Get product name
+                        var productName = product
+                            .QuerySelector("h1")
+                            .InnerText
+                            .RemoveBreakLineTab();
+                        Console.WriteLine("Check product Name: {0}", productName);
+
+                        //Get product price
+                        var productPrice = product
+                            .QuerySelector("b.price")
+                            .InnerText
+                            .RemoveBreakLineTab();
+                        Console.WriteLine("Check product Price: {0}", productPrice);
+
+                        //Get product detail
+                        //var productDetail = product
+                        //    .QuerySelectorAll(".item-detail.p-3 > .list-unstyled.item-fields > li > span")
+                        //    .ToList();
+                        //Console.WriteLine("Check product detail: {0}", productDetail.Count);
+
+                    }
+
+
+
+                    //        var listNodeProductItem = documentForListItem
+                    //            .DocumentNode
+                    //            .QuerySelectorAll("div.shop-container " +
+                    //                              "> div.products " +
+                    //                              "> div.product-small " +
+                    //                              "> div.col-inner " +
+                    //                              "> div.product-small " +
+                    //                              "> div.box-text")
+                    //            .ToList();
+
+                }
             }    
         }
     }
