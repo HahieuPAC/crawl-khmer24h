@@ -4,6 +4,7 @@ using CrawlDataWebsiteToolBasic.Helpers;
 using Fizzler.Systems.HtmlAgilityPack;
 using HtmlAgilityPack;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Xml.Linq;
 using static System.Net.WebRequestMethods;
@@ -117,14 +118,24 @@ internal class Program
                         var productDetails = product
                             .QuerySelectorAll(".item-detail > .list-unstyled > li > div > .value")
                             .ToList();
-                        Console.WriteLine("check product detail: {0}", productDetails[1].InnerText);
+                        string carMakes = productDetails[0].InnerText;
+                        string carModel = productDetails[1].InnerText;
+                        string year = productDetails[2].InnerText;
+                        string TaxType = productDetails[3].InnerText;
+                        string condition = productDetails[4].InnerText;
+                        string Transmission = productDetails[5].InnerText;
+                        string Color = productDetails[6].InnerText;
+
 
 
                         //Get product detail ID
                         var productDetailId = product
                             .QuerySelectorAll(".item-header > .item-short-description > .list-unstyled > li > .value")
                             .ToList();
-                        Console.WriteLine("check product detail: {0}", productDetailId[1].InnerText);
+                        string id = productDetailId[0].InnerText;
+                        string category = productDetailId[1].InnerText;
+                        string Locations = productDetailId[2].InnerText;
+                        string Posted = productDetailId[3].InnerText;
 
 
                         //Get product phone number
@@ -143,19 +154,18 @@ internal class Program
                             
                         Console.WriteLine("check product phone number: {0}", phoneNumber[1]);
 
+                        listDataExport.Add(new ProductModel()
+                        {
+                            //productname = productname,
+                            //gender = gender.equals("nam") ? "nam" : "nữ",
+                            //currency = "vnd",
+                            //discountprice = discountprice,
+                            //orginprice = orginprice,
+                            //linkdetail = linkdetail,
+                            //author = "https://www.code-mega.com"
+                        });
+
                     }
-
-
-
-                    //        var listNodeProductItem = documentForListItem
-                    //            .DocumentNode
-                    //            .QuerySelectorAll("div.shop-container " +
-                    //                              "> div.products " +
-                    //                              "> div.product-small " +
-                    //                              "> div.col-inner " +
-                    //                              "> div.product-small " +
-                    //                              "> div.box-text")
-                    //            .ToList();
 
                 }
             }    
