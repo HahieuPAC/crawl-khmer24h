@@ -14,21 +14,6 @@ using static System.Net.WebRequestMethods;
 using MySqlConnector;
 using System;
 
-/// <summary>
-/// 
-/// Data will be crawling from this website: https://fridayshopping.vn
-/// You need to have basic knowledge with C#, Web HTML, CSS
-/// If have any bug or question. Please comment in following this link: https://www.code-mega.com/p?q=crawl-data-trich-xuat-du-lieu-website-voi-c-phan-1-2c222jN
-/// Advanced Tools here: https://www.code-mega.com/p?q=crawl-data-trich-xuat-du-lieu-website-voi-c-phan-2-72953tZ
-/// 
-/// </summary>
-/// 
-/// <param name="currentPath"> Get curent path of project | Lấy đường dẫn của chương trình </param>
-/// <param name="savePathExcel"> Path save excel file | Đường dẫn để lưu file excel </param>
-/// <param name="baseUrl"> URL website need to crawl | Đường dẫn trang web cần crawl </param>
-/// 
-
-
 internal class Program
 {
     public static string GetInnerTextSafely(List<HtmlNode> nodeList, int index)
@@ -54,35 +39,25 @@ internal class Program
         var savePathExcel = currentPath.Split("bin")[0] + @"Excel File\";
         const string baseUrl = "https://www.khmer24.com/en/cars/all-cars.html?ad_condition=";
 
-        // Create new instance
-        // Tạo một instance mới
         var web = new HtmlWeb()
         {
             AutoDetectEncoding = false,
             OverrideEncoding = Encoding.UTF8
         };
 
-        // List gender for product
-        // List giới tính cho 2 site Đồng Hồ Nữ và Đồng Hồ Nam
         var types = new List<string>() { "new", "used" };
 
-        // List product crawl
-        // List lưu danh sách các sản phẩm Crawl được
         var listDataExport = new List<ProductModel>();
         var listLinkProduct = new List<string>();
         var newLinkProduct = new HashSet<string>();
-        var linkProductSet = new HashSet<string>(System.IO.File.ReadAllLines(currentPath.Split("bin")[0] + "saved-products.txt"));
+        //var linkProductSet = new HashSet<string>(System.IO.File.ReadAllLines(currentPath.Split("bin")[0] + "saved-products.txt"));
 
         Console.WriteLine("Please do not turn off the app while crawling!");
 
-        // Loop for 2 gender 
-        // Lặp List gender
         foreach (var type in types)
         {
             var requestUrl = baseUrl + type;
 
-            // Load HTML to document from requestUrl
-            // Load trang web, nạp html vào document từ requestUrl
             var documentForGetTotalPage = web.Load(requestUrl);
 
             var checkElements = documentForGetTotalPage
@@ -94,10 +69,10 @@ internal class Program
 
             int totalProductsResult;
             string textTotalProductsResult = StringHelper.ProcessUrl(checkElements);
-            Console.WriteLine(">>>check totalProductsResult: {0}", textTotalProductsResult);
+            //Console.WriteLine(">>>check totalProductsResult: {0}", textTotalProductsResult);
             int.TryParse(textTotalProductsResult, out totalProductsResult);
 
-            for (int i = 0; i < 50; i += 50)
+            for (int i = 0; i < totalProductsResult; i += 50)
             {
                 string typeUrl = $"https://www.khmer24.com/en/cars/all-cars.html?ad_condition={type}&per_page={i}";
                 //Console.WriteLine(">>>check typeUrl: {0}", typeUrl);
@@ -107,18 +82,48 @@ internal class Program
                     .QuerySelectorAll(".item > a")
                     .Select(a => a.Attributes["href"].Value)
                     .ToList();
+
+                using (var connection = new MySqlConnection(connectionString))
+                {
+                    connection.Open();
+                    var sql = "SELECT Link FROM Product";
+
+                    using (var cmd = new MySqlCommand(sql, connection)) 
+                    { 
+                        using (var reader = cmd.ExecuteReader()) 
+                        { 
+                                while (reader.Read())
+                            {
+                                string link = reader.GetString("Link");
+                                listLinkProduct.Add(link);
+                            }
+                        
+                        }
+                    }
+
+                }
                 foreach (string linkProduct in getLinkProdcuts)
                 {
-                    if (!linkProductSet.Contains(linkProduct))
+                   
+                    if (!listLinkProduct.Contains(linkProduct))
                     {
-                        listLinkProduct.Add(linkProduct);
                         newLinkProduct.Add(linkProduct);
                     }
                 }
 
             }
         }
-        
+
+        //foreach (var listlinks in listLinkProduct)
+        //{
+        //    Console.WriteLine(listlinks);
+        //}
+        //Console.WriteLine("__________________________________________________________________________________");
+        //foreach (var listlinks in newLinkProduct)
+        //{
+        //    Console.WriteLine(listlinks);
+        //}
+
 
         foreach (var linkProduct in newLinkProduct)
         {
@@ -134,12 +139,12 @@ internal class Program
                 //Get product name
                 var productNameNode = firstNodeProductItem.QuerySelector("h1");
                 var productName = productNameNode != null ? productNameNode.InnerText.RemoveBreakLineTab() : "";
-                Console.WriteLine("Check product Name: {0}", productName);
+                //Console.WriteLine("Check product Name: {0}", productName);
 
                 //Get product price
                 var productPriceNode = firstNodeProductItem.QuerySelector("b.price");
                 var productPrice = productPriceNode != null ? productPriceNode.InnerText.RemoveBreakLineTab() : "";
-                Console.WriteLine("Check product Price: {0}", productPrice);
+                //Console.WriteLine("Check product Price: {0}", productPrice);
 
                 //Get product detail
                 var productDetails = firstNodeProductItem
@@ -190,7 +195,7 @@ internal class Program
                 //string phoneNumber0 = GetPhoneNumberSafely(phoneNumber, 0);
                 //string phoneNumber1 = GetPhoneNumberSafely(phoneNumber, 1);
                 //string phoneNumber2 = GetPhoneNumberSafely(phoneNumber, 2);
-                Console.WriteLine(">>> Check phone number : {0}", allPhoneNumber);
+                //Console.WriteLine(">>> Check phone number : {0}", allPhoneNumber);
 
 
                 listDataExport.Add(new ProductModel()
@@ -249,10 +254,10 @@ internal class Program
             }
         }
 
-        System.IO.File.AppendAllLines(currentPath.Split("bin")[0] + "saved-products.txt", newLinkProduct);
-        var fileName = DateTime.Now.Ticks + "_Khmer24h_car.xlsx";
-        // Export data to Excel
-        ExportToExcel<ProductModel>.GenerateExcel(listDataExport, savePathExcel + fileName, "_hayzzys-crawl");
+        //System.IO.File.AppendAllLines(currentPath.Split("bin")[0] + "saved-products.txt", newLinkProduct);
+        //var fileName = DateTime.Now.Ticks + "_Khmer24h_car.xlsx";
+        //// Export data to Excel
+        //ExportToExcel<ProductModel>.GenerateExcel(listDataExport, savePathExcel + fileName, "_hayzzys-crawl");
 
         Console.WriteLine("DONE !!!");
     }
