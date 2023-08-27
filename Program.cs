@@ -249,6 +249,7 @@ internal class Program
                     cmd.Parameters.AddWithValue("@PhoneNumber2", product.PhoneNumber1);
                     cmd.Parameters.AddWithValue("@PhoneNumber3", product.PhoneNumber2);
 
+                  
                     cmd.ExecuteNonQuery();
                 }
             }
@@ -261,4 +262,4 @@ internal class Program
 
         Console.WriteLine("DONE !!!");
     }
-}
+} 
