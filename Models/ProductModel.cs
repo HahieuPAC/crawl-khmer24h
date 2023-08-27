@@ -18,8 +18,8 @@ namespace CrawlDataWebsiteTool.Models
         [Description("Condition")] public string Condition { get; set; }
         [Description("Year")] public string Year { get; set; }
         [Description("Transmission")] public string Transmission { get; set; }
-        //[Description("Phone number 1")] public string PhoneNumber0 { get; set; }
-        //[Description("Phone number 2")] public string PhoneNumber1 { get; set; }
-        //[Description("Phone number 3")] public string PhoneNumber2 { get; set; }
+        [Description("Phone number 1")] public string PhoneNumber0 { get; set; }
+        [Description("Phone number 2")] public string PhoneNumber1 { get; set; }
+        [Description("Phone number 3")] public string PhoneNumber2 { get; set; }
     }
 }

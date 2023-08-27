@@ -37,15 +37,26 @@ namespace CrawlDataWebsiteToolBasic.Helpers
         {
             string[] parts = url.Split('=');
 
-            return parts[2];
+            if (parts.Length >= 3)
+            {
+                return parts[2];
+            }
+
+            return "";
         }
 
         public static string ProcessTel(string tel)
         {
             string[] parts = tel.Split(':');
 
-            return parts[1];
+            if (parts.Length >= 2)
+            {
+                return parts[1];
+            }
+
+            return "";
         }
+
     }
 
 }
