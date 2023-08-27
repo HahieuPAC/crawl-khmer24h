@@ -163,3 +163,4 @@ C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\obj\Debug\net
 C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\CrawlDataWebsiteToolBasic.genruntimeconfig.cache
 C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\obj\Debug\net6.0\ref\CrawlDataWebsiteToolBasic.dll
 C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\CsvHelper.dll
+C:\Users\Administrator\Documents\Project\CrawlDataWebsiteToolBasic\bin\Debug\net6.0\MySqlConnector.dll

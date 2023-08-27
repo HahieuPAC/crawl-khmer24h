@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "kKXjVRMUvCp8ntwIjdsEIPbq6MC5Og4xyb9gmTum08OLg4Xtk3K2PNUljh6o2mHJrmf9Ta0O6dZkDSG7qlcAtg==",
+  "dgSpecHash": "idfw+hpD+wf3YpbrZYRKhymbSj0j58K6wZMimvw6GiZiATkBUv6Kj20UG+hmSa3KPdXX7kGtQdO2WaD35M1low==",
   "success": true,
   "projectFilePath": "C:\\Users\\Administrator\\Documents\\Project\\CrawlDataWebsiteToolBasic\\CrawlDataWebsiteToolBasic.csproj",
   "expectedPackageFiles": [
@@ -26,6 +26,7 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\mysqlconnector\\2.2.7\\mysqlconnector.2.2.7.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\newtonsoft.json\\10.0.1\\newtonsoft.json.10.0.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\newtonsoft.json.bson\\1.0.1\\newtonsoft.json.bson.1.0.1.nupkg.sha512",

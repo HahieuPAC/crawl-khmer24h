@@ -13,10 +13,12 @@
     <PackageReference Include="Fizzler.Systems.HtmlAgilityPack" Version="1.2.1" />
     <PackageReference Include="HtmlAgilityPack" Version="1.11.46" />
     <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.9" />
+    <PackageReference Include="MySqlConnector" Version="2.2.7" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Excel File" />
+    <Folder Include="MySql\" />
   </ItemGroup>
 
 </Project>

@@ -12,7 +12,8 @@
           "EPPlus": "6.0.8",
           "Fizzler.Systems.HtmlAgilityPack": "1.2.1",
           "HtmlAgilityPack": "1.11.46",
-          "Microsoft.AspNet.WebApi.Client": "5.2.9"
+          "Microsoft.AspNet.WebApi.Client": "5.2.9",
+          "MySqlConnector": "2.2.7"
         },
         "runtime": {
           "CrawlDataWebsiteToolBasic.dll": {}
@@ -247,6 +248,14 @@
             "assetType": "runtime",
             "assemblyVersion": "5.0.0.0",
             "fileVersion": "5.0.20.51904"
+          }
+        }
+      },
+      "MySqlConnector/2.2.7": {
+        "runtime": {
+          "lib/net6.0/MySqlConnector.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.2.7.0"
           }
         }
       },
@@ -1256,6 +1265,13 @@
       "sha512": "sha512-Bh6blKG8VAKvXiLe2L+sEsn62nc1Ij34MrNxepD2OCrS5cpCwQa9MeLyhVQPQ/R4Wlzwuy6wMK8hLb11QPDRsQ==",
       "path": "microsoft.win32.systemevents/5.0.0",
       "hashPath": "microsoft.win32.systemevents.5.0.0.nupkg.sha512"
+    },
+    "MySqlConnector/2.2.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rwFa71MlOJ142S+BXDvtLRdAIn7l6PTNWu+Xehs2qRehK8dckjKqwvK8azEADCMkQyXS1LXgh9HkSvItpTi6WA==",
+      "path": "mysqlconnector/2.2.7",
+      "hashPath": "mysqlconnector.2.2.7.nupkg.sha512"
     },
     "NETStandard.Library/1.6.1": {
       "type": "package",

@@ -4,7 +4,7 @@ namespace CrawlDataWebsiteTool.Models
 {
     public class ProductModel
     {
-        [Description("Order")] public string ProducOrder { get; set; }
+        [Description("Link")] public string Link { get; set; }
         [Description("ID")] public string ID { get; set; }
         [Description("Category")] public string Category { get; set; }
         [Description("Locations")] public string Locations { get; set; }
@@ -14,8 +14,8 @@ namespace CrawlDataWebsiteTool.Models
         [Description("Car Makes")] public string CarMakes { get; set; }
         [Description("Tax Type")] public string TaxType { get; set; }
         [Description("Color")] public string Color { get; set; }
-        [Description("Car Mode")] public string CarModel { get; set; }
-        [Description("Condition")] public string Condition { get; set; }
+        [Description("Car Model")] public string CarModel { get; set; }
+        [Description("ProductCondition")] public string ProductCondition { get; set; }
         [Description("Year")] public string Year { get; set; }
         [Description("Transmission")] public string Transmission { get; set; }
         [Description("Phone number 1")] public string PhoneNumber0 { get; set; }
